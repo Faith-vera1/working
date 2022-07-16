@@ -10,7 +10,7 @@ const Todo = require("./Models/Todo")
 
 const app = express();
 
-const port = 8000
+const port = process.env.PORT || 8000
 mongoose.connect(
     `mongodb+srv://Todolist:todolist@happygirl.iawe6ah.mongodb.net/?retryWrites=true&w=majority`,
 
